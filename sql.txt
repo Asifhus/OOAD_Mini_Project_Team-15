@@ -1,0 +1,28 @@
+create table CUSTOMER (
+        id integer not null auto_increment,
+        email varchar(255) unique,
+        firstName varchar(255),
+        lastName varchar(255),
+        mobile varchar(255),
+        password varchar(255),
+        primary key (id)
+    )
+
+create table FLIGHT (
+id integer not null primary key auto_increment,
+departure varchar(255),
+arrival varchar(255),
+eta varchar(255),
+etd varchar(255),
+seats int,
+flightNumber varchar(255),
+airline varchar(255)
+)
+create table BOOKING (
+id integer not null primary key auto_increment,
+firstName varchar(255),
+lastName varchar(255),
+email varchar(255),
+mobile varchar(255),
+flightId int
+)
